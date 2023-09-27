@@ -1,7 +1,11 @@
 .navbar {
     background-color: #323232;
-    width: 320px;
+    color: #FFFFFF;
 }
-.navbar-hero{
-    width: 320px;
+.navbar-logo__container {
+    display: flex;
+    justify-content: center;
+}
+li {
+    list-style-type: none;
 }
