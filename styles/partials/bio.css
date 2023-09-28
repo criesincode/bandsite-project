@@ -24,6 +24,7 @@ li {
   color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 20px;
 }
 
 .hero-image {
@@ -35,4 +36,11 @@ li {
   margin-bottom: 0px;
   min-width: 100vw;
   min-height: 328px;
+}
+
+.hero-image-text {
+  padding-top: 148px;
+  padding-left: 16px;
+  position: relative;
+  color: #FFFFFF;
 }/*# sourceMappingURL=bio.css.map */

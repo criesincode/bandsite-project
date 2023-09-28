@@ -21,6 +21,7 @@ li {
     color: #FFFFFF;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 20px;
 }
 .hero-image {
     background: url(/assets/images/hero-bio.jpg);
@@ -36,9 +37,5 @@ li {
     padding-top: 148px;
     padding-left: 16px;
     position: relative;
-    font-size: $mobile-page-section-header-ts ;
-    line-height: $mobile-page-section-header-lh ;
-    font-weight: 600;
-    color: $primary-color-white;
-    margin-top: 0px;
+    color:#FFFFFF
 }
