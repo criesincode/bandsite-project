@@ -8,6 +8,31 @@
   justify-content: center;
 }
 
+.navbar-pages {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 li {
   list-style-type: none;
+}
+
+.contact-info {
+  background-color: #323232;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  background: url(/assets/images/hero-bio.jpg);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 0px;
+  min-width: 100vw;
+  min-height: 328px;
 }/*# sourceMappingURL=bio.css.map */
