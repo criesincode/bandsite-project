@@ -2,12 +2,10 @@
   background-color: #323232;
   color: #FFFFFF;
 }
-
 .navbar-logo__container {
   display: flex;
   justify-content: center;
 }
-
 .navbar-pages {
   display: flex;
   justify-content: space-between;
@@ -41,6 +39,7 @@ li {
 .hero-image-text {
   padding-top: 148px;
   padding-left: 16px;
+  padding-bottom: 148px;
   position: relative;
   color: #FFFFFF;
 }
@@ -59,4 +58,10 @@ li {
 .main-image__gallery--item {
   width: 100%;
   height: auto;
+}
+
+.main-text-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=bio.css.map */
