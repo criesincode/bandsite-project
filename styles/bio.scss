@@ -1,3 +1,5 @@
+@use "./partials/mixins" as *;
+
 body {
     margin: 0%;
 }
@@ -59,6 +61,10 @@ li {
       padding-left: 20px;
       padding-bottom: 30px;
       justify-content: space-evenly;
+      @include tablet {
+        width: 400px;
+        height: 250px;
+      }
    }
  &-bio__container {
       display: flex;
@@ -86,14 +92,14 @@ li {
 }
 
 // tablet
-@media (min-width: 768px){
-    .main-image__gallery--item {
-        width: 400px;
-        height: 250px;
-    }
-}
+// @media (min-width: 768px){
+//     .main-image__gallery--item {
+//         width: 400px;
+//         height: 250px;
+//     }
+// }
 
-// desktop
-@media (min-width: 1280px) {
+// // desktop
+// @media (min-width: 1280px) {
 
-}
+// }
