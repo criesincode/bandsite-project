@@ -26,7 +26,7 @@ li {
     padding-left: 20px;
 }
 .main {
-    min-width: 320px;
+    min-width: 767px;
  &-hero__image {
       background: url(/assets/images/hero-bio.jpg);
       position: relative;
@@ -36,34 +36,44 @@ li {
       margin-bottom: 0px;
       min-width: 100vw;
       min-height: auto;
- }
+   }
  &-hero__image--text {
       padding-top: 148px;
       padding-left: 16px;
       padding-bottom: 148px;
       position: relative;
       color: #FFFFFF
- }
+   }
  &-image__gallery {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
- }
+   }
  &-bio__image {
       width: 100%;
       height: auto;
- }
+   }
  &-image__gallery--item {
       width: 100%;
       height: auto;
- }
+      padding-left: 20px;
+      padding-bottom: 30px;
+      justify-content: space-evenly;
+   }
  &-bio__container {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
- }
+      
+   }
  &__title {
       padding: 1px;
+   }
+ &-text-container__info--a {
+    padding-top: 16px;
+ } 
+ &-gallery__info {
+    padding-left: 12px;
  }
 }
 
@@ -76,11 +86,14 @@ li {
 }
 
 // tablet
-@media screen and (min-width: 768px){
-
+@media (min-width: 768px){
+    .main-image__gallery--item {
+        width: 400px;
+        height: 250px;
+    }
 }
 
 // desktop
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
 
 }

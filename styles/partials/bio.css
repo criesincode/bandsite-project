@@ -30,7 +30,7 @@ li {
 }
 
 .main {
-  min-width: 320px;
+  min-width: 767px;
 }
 .main-hero__image {
   background: url(/assets/images/hero-bio.jpg);
@@ -61,6 +61,9 @@ li {
 .main-image__gallery--item {
   width: 100%;
   height: auto;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
 }
 .main-bio__container {
   display: flex;
@@ -70,6 +73,12 @@ li {
 .main__title {
   padding: 1px;
 }
+.main-text-container__info--a {
+  padding-top: 16px;
+}
+.main-gallery__info {
+  padding-left: 12px;
+}
 
 .additional-info {
   background-color: #323232;
@@ -77,4 +86,11 @@ li {
   flex-wrap: wrap;
   padding-left: 10px;
   color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .main-image__gallery--item {
+    width: 400px;
+    height: 250px;
+  }
 }/*# sourceMappingURL=bio.css.map */
