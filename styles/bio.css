@@ -30,7 +30,7 @@ li {
 }
 
 .main {
-  min-width: 767px;
+  min-width: 320px;
 }
 .main-hero__image {
   background: url(/assets/images/hero-bio.jpg);
@@ -67,8 +67,8 @@ li {
 }
 @media (min-width: 768px) {
   .main-image__gallery--item {
-    width: 400px;
-    height: 250px;
+    width: 215px;
+    height: 125px;
   }
 }
 .main-bio__container {
