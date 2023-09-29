@@ -1,3 +1,7 @@
+body {
+  margin: 0%;
+}
+
 .navbar {
   background-color: #323232;
   color: #FFFFFF;
@@ -25,7 +29,10 @@ li {
   padding-left: 20px;
 }
 
-.hero-image {
+.main {
+  min-width: 320px;
+}
+.main-hero__image {
   background: url(/assets/images/hero-bio.jpg);
   position: relative;
   background-size: cover;
@@ -35,33 +42,39 @@ li {
   min-width: 100vw;
   min-height: auto;
 }
-
-.hero-image-text {
+.main-hero__image--text {
   padding-top: 148px;
   padding-left: 16px;
   padding-bottom: 148px;
   position: relative;
   color: #FFFFFF;
 }
-
-.main-image-gallery {
+.main-image__gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.main-image-a {
+.main-bio__image {
   width: 100%;
   height: auto;
 }
-
 .main-image__gallery--item {
   width: 100%;
   height: auto;
 }
-
-.main-text-container {
+.main-bio__container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+.main__title {
+  padding: 1px;
+}
+
+.additional-info {
+  background-color: #323232;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=bio.css.map */

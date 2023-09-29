@@ -1,3 +1,6 @@
+body {
+    margin: 0%;
+}
 .navbar {
     background-color: #323232;
     color: #FFFFFF;
@@ -10,7 +13,7 @@
         justify-content: space-between;
         padding-left: 100px;
         padding-right: 100px;
-    }
+    }   
 }
 li {
     list-style-type: none;
@@ -22,38 +25,62 @@ li {
     flex-wrap: wrap;
     padding-left: 20px;
 }
-.hero-image {
-    background: url(/assets/images/hero-bio.jpg);
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 0px;
-    min-width: 100vw;
-    min-height: auto;
+.main {
+    min-width: 320px;
+ &-hero__image {
+      background: url(/assets/images/hero-bio.jpg);
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: 0px;
+      min-width: 100vw;
+      min-height: auto;
+ }
+ &-hero__image--text {
+      padding-top: 148px;
+      padding-left: 16px;
+      padding-bottom: 148px;
+      position: relative;
+      color: #FFFFFF
+ }
+ &-image__gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+ }
+ &-bio__image {
+      width: 100%;
+      height: auto;
+ }
+ &-image__gallery--item {
+      width: 100%;
+      height: auto;
+ }
+ &-bio__container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+ }
+ &__title {
+      padding: 1px;
+ }
 }
-.hero-image-text {
-    padding-top: 148px;
-    padding-left: 16px;
-    padding-bottom: 148px;
-    position: relative;
-    color:#FFFFFF
-}
-.main-image-gallery {
+
+.additional-info {
+    background-color: #323232;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    padding-left: 10px;
+    color: #FFFFFF;
 }
-.main-image-a {
-    width: 100%;
-    height: auto;
+
+// tablet
+@media screen and (min-width: 768px){
+
 }
-.main-image__gallery--item {
-    width: 100%;
-    height: auto;
-}
-.main-text-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+
+// desktop
+@media screen and (min-width: 1280px) {
+
 }
