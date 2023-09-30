@@ -83,6 +83,15 @@ li {
  &-gallery__info {
     padding-left: 12px;
  }
+ &-text-container {
+  display: flex;
+  flex-wrap: wrap;
+ }
+ &-text-container__b {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+ }
 }
 
 .additional-info {

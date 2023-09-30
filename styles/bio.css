@@ -100,6 +100,15 @@ li {
 .main-gallery__info {
   padding-left: 12px;
 }
+.main-text-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-text-container__b {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 .additional-info {
   background-color: #323232;
