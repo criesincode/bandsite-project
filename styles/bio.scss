@@ -1,7 +1,9 @@
 @use "./partials/mixins" as *;
+@use "./partials/fonts" as *;
 
 body {
     margin: 0%;
+    font-family: "Avenir";
 }
 .navbar {
     background-color: #323232;
