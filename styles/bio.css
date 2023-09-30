@@ -97,10 +97,7 @@ li {
 .main-text-container__info--a {
   padding-top: 16px;
 }
-.main-gallery__info {
-  padding-left: 12px;
-}
-.main-text-container {
+.main-container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -116,4 +113,16 @@ li {
   flex-wrap: wrap;
   padding-left: 10px;
   color: #FFFFFF;
+}
+
+.gallery {
+  background-color: #FAFAFA;
+}
+.gallery-images {
+  padding-left: 12px;
+}
+.gallery__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=bio.css.map */

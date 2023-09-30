@@ -80,10 +80,7 @@ li {
  &-text-container__info--a {
     padding-top: 16px;
  } 
- &-gallery__info {
-    padding-left: 12px;
- }
- &-text-container {
+    &-container {
   display: flex;
   flex-wrap: wrap;
  }
@@ -100,6 +97,17 @@ li {
     flex-wrap: wrap;
     padding-left: 10px;
     color: #FFFFFF;
+}
+.gallery {
+  background-color: #FAFAFA;
+  &-images {
+    padding-left: 12px;
+ }  
+    &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
 }
 
 // tablet
