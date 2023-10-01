@@ -38,6 +38,7 @@ li {
     
     &__container {
       display: flex;
+      padding-bottom: 20px;
       @include tablet {
         margin-right: 20px;
         padding-top: 25px;
@@ -46,6 +47,8 @@ li {
     }
     &__title {
       padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
     &__title-a {
         padding-right: 20px;
@@ -61,68 +64,81 @@ li {
         width: 100%;
       }
     }
+    &__contact--mod {
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+  &__contact--mod2 {
+    padding-bottom: 25px;
+  }
+  &__contact--mod3 {
+    padding-bottom: 60px;
+  }
 }
 .main {
-    min-width: 320px;
- &-hero__image {
-      background: url(/assets/images/hero-bio.jpg);
-      position: relative;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-bottom: 0px;
-      min-width: 100vw;
-      min-height: auto;
-   }
- &-hero__image--text {
-      padding-top: 148px;
-      padding-left: 16px;
-      padding-bottom: 148px;
-      position: relative;
-      color: #FFFFFF
-   }
- &-image__gallery {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-   }
- &-bio__image {
-      width: 100%;
-      height: auto;
-   }
- &-image__gallery--item {
-      width: 100%;
-      height: auto;
-      padding-left: 20px;
-      padding-bottom: 30px;
-      justify-content: space-evenly;
-      @include tablet {
-        width: 215px;
-        height: 125px;
-      }
-   }
- &-bio__container {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      
-   }
- &__title {
-      padding: 1px;
-   }
- &-text-container__info--a {
-    padding-top: 16px;
- } 
-    &-container {
-  display: flex;
-  flex-wrap: wrap;
- }
- &-text-container__b {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
- }
-}
+      min-width: 320px;
+  &-hero__image {
+        background: url(/assets/images/hero-bio.jpg);
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 0px;
+        min-width: 100vw;
+        min-height: auto;
+    }
+  &-hero__image--text {
+        padding-top: 148px;
+        padding-left: 16px;
+        padding-bottom: 148px;
+        position: relative;
+        color: #FFFFFF
+    }
+  &-image__gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+  &-images__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &-bio__image {
+        width: 100%;
+        height: auto;
+    }
+  &-image__gallery--item {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+        justify-content: space-evenly;
+        @include tablet {
+          width: 215px;
+          height: 125px;
+        }
+    }
+  &-bio__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+  &__title {
+        padding: 1px;
+    }
+  &-text-container__info--a {
+      padding-top: 16px;
+  } 
+      &-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-text-container__b {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  }
 
 .additional-info {
     background-color: #323232;
@@ -130,6 +146,13 @@ li {
     flex-wrap: wrap;
     padding-left: 10px;
     color: #FFFFFF;
+    &__image {
+      padding-bottom: 15px;
+    }
+    &--mod {
+      font-size: 12px;
+      padding-bottom: 15px;
+    }
 }
 .gallery {
   background-color: #FAFAFA;
