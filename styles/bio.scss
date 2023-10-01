@@ -30,6 +30,114 @@ body {
 li {
     list-style-type: none;
 }
+
+.main {
+  min-width: 320px;
+&-hero__image {
+    background: url(/assets/images/hero-bio.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0px;
+    min-width: 100vw;
+    min-height: auto;
+}
+&-hero__image--text {
+    padding-top: 148px;
+    padding-left: 16px;
+    padding-bottom: 148px;
+    position: relative;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+&-image__gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+&-images__container {
+padding-left: 20px;
+padding-right: 20px;
+}
+&-bio__image {
+    width: 100%;
+    height: auto;
+}
+&-image__gallery--item {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    @include tablet {
+      width: 215px;
+      height: 125px;
+    }
+}
+&-bio__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+&__title {
+    padding: 1px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+&__title--mod {
+  font-weight: 600;
+  font-size: 23px;
+}
+&-text-container__info {
+padding-top: 10px;
+padding-bottom: 10px;
+line-height: 1.5;
+font-weight: 600;
+}
+&-text-container__info--a {
+  padding-bottom: 20px;
+  font-weight: 600;
+} 
+&-text-container__info--b {
+line-height: 1.5;
+font-size: 13px;
+padding-bottom: 15px;
+}
+&-text-container__info--bb {
+font-weight: 600;
+padding-bottom: 15px;
+}
+  &-container {
+display: flex;
+flex-wrap: wrap;
+}
+&-text-container__b {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+}
+
+.gallery {
+  background-color: #FAFAFA;
+  &-images {
+    padding-left: 12px;
+ }  
+    &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ &-images {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0%;
+  font-weight: 600;
+  font-size: 25px;
+ }
+}
+
 .contact-info {
     background-color: #323232;
     color: #FFFFFF;
@@ -79,89 +187,11 @@ li {
   &__contact--mod3 {
     padding-bottom: 60px;
   }
+  &__contact--mod4 {
+    font-weight: 600;
+  }
 }
-.main {
-      min-width: 320px;
-  &-hero__image {
-        background: url(/assets/images/hero-bio.jpg);
-        position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-bottom: 0px;
-        min-width: 100vw;
-        min-height: auto;
-    }
-  &-hero__image--text {
-        padding-top: 148px;
-        padding-left: 16px;
-        padding-bottom: 148px;
-        position: relative;
-        color: #FFFFFF
-    }
-  &-image__gallery {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-  &-images__container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  &-bio__image {
-        width: 100%;
-        height: auto;
-    }
-  &-image__gallery--item {
-        width: 100%;
-        height: auto;
-        padding-bottom: 30px;
-        justify-content: space-evenly;
-        @include tablet {
-          width: 215px;
-          height: 125px;
-        }
-    }
-  &-bio__container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        
-    }
-  &__title {
-        padding: 1px;
-        padding-top: 15px;
-        padding-bottom: 10px;
-    }
-  &-text-container__info {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 1.5;
-    font-weight: 600;
-  }
-    &-text-container__info--a {
-      padding-bottom: 20px;
-      font-weight: 600;
-  } 
-   &-text-container__info--b {
-    line-height: 1.5;
-    font-size: 13px;
-    padding-bottom: 15px;
-  }
-  &-text-container__info--bb {
-    font-weight: 600;
-    padding-bottom: 15px;
-  }
-      &-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &-text-container__b {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  }
+
 
 .additional-info {
     background-color: #323232;
@@ -177,34 +207,4 @@ li {
       padding-bottom: 15px;
     }
 }
-.gallery {
-  background-color: #FAFAFA;
-  &-images {
-    padding-left: 12px;
- }  
-    &__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
- }
- &-images {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 0%;
- }
-}
 
-
-
-// tablet
-// @media (min-width: 768px){
-//     .main-image__gallery--item {
-//         width: 400px;
-//         height: 250px;
-//     }
-// }
-
-// // desktop
-// @media (min-width: 1280px) {
-
-// }
