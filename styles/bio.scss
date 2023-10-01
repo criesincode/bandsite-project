@@ -1,6 +1,11 @@
 @use "./partials/mixins" as *;
 @use "./partials/fonts" as *;
-
+* {
+margin: 0;
+}
+a {
+  font: inherit;
+}
 body {
     margin: 0%;
     font-family: "Avenir";
@@ -25,9 +30,37 @@ li {
 .contact-info {
     background-color: #323232;
     color: #FFFFFF;
-    display: flex;
-    flex-wrap: wrap;
     padding-left: 20px;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    &__container {
+      display: flex;
+      @include tablet {
+        margin-right: 20px;
+        padding-top: 25px;
+        
+      }
+    }
+    &__title {
+      padding-right: 20px;
+    }
+    &__title-a {
+        padding-right: 20px;
+      
+    }
+    &__title-c {
+        padding-left: 20px;
+      
+    }
+    &__contacts {
+      @include tablet {
+        display: flex;
+        width: 100%;
+      }
+    }
 }
 .main {
     min-width: 320px;
@@ -109,6 +142,8 @@ li {
     flex-wrap: wrap;
  }
 }
+
+
 
 // tablet
 // @media (min-width: 768px){

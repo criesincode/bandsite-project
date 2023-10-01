@@ -12,6 +12,14 @@
   src: url(/assets/fonts/AvenirNextLTPro-Demi.otf);
   font-weight: 600;
 }
+* {
+  margin: 0;
+}
+
+a {
+  font: inherit;
+}
+
 body {
   margin: 0%;
   font-family: "Avenir";
@@ -39,9 +47,37 @@ li {
 .contact-info {
   background-color: #323232;
   color: #FFFFFF;
-  display: flex;
-  flex-wrap: wrap;
   padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.contact-info__container {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .contact-info__container {
+    margin-right: 20px;
+    padding-top: 25px;
+  }
+}
+.contact-info__title {
+  padding-right: 20px;
+}
+.contact-info__title-a {
+  padding-right: 20px;
+}
+.contact-info__title-c {
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .contact-info__contacts {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .main {
