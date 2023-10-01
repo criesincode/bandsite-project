@@ -9,6 +9,8 @@ a {
 body {
     margin: 0%;
     font-family: "Avenir";
+    padding-right: 16px;
+    padding-left: 16px;
 }
 .navbar {
     background-color: #323232;
@@ -19,11 +21,12 @@ body {
     }
     &-pages {
         display: flex;
-        justify-content: space-between;
-        padding-left: 100px;
-        padding-right: 100px;
+        justify-content: space-evenly;
+        padding-left: 0%;
+        
     }   
 }
+
 li {
     list-style-type: none;
 }
@@ -49,6 +52,8 @@ li {
       padding-right: 20px;
       padding-top: 20px;
       padding-bottom: 20px;
+      font-weight: 600;
+      font-size: 20px;
     }
     &__title-a {
         padding-right: 20px;
@@ -125,10 +130,28 @@ li {
     }
   &__title {
         padding: 1px;
+        padding-top: 15px;
+        padding-bottom: 10px;
     }
-  &-text-container__info--a {
-      padding-top: 16px;
+  &-text-container__info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+    &-text-container__info--a {
+      padding-bottom: 20px;
+      font-weight: 600;
   } 
+   &-text-container__info--b {
+    line-height: 1.5;
+    font-size: 13px;
+    padding-bottom: 15px;
+  }
+  &-text-container__info--bb {
+    font-weight: 600;
+    padding-bottom: 15px;
+  }
       &-container {
     display: flex;
     flex-wrap: wrap;
@@ -163,6 +186,11 @@ li {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+ }
+ &-images {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0%;
  }
 }
 
