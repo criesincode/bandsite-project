@@ -175,11 +175,6 @@ li:hover a {
     font-size: 14px;
   }
 }
-@media (min-width: 1280px) {
-  .main-text-container__info--b {
-    padding-left: 175px;
-  }
-}
 .main-text-container__info--bb {
   font-weight: 600;
   padding-bottom: 15px;
