@@ -50,6 +50,10 @@ li {
     position: relative;
     color: #FFFFFF;
     font-weight: 700;
+    @include tablet {
+      font-size: 60px;
+      font-weight: 600;
+    }
 }
 &-image__gallery {
     display: flex;
@@ -73,6 +77,17 @@ padding-right: 20px;
       width: 215px;
       height: 125px;
     }
+}
+&-image__gallery--item1 {
+  @include tablet {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+&-image__gallery--item2 {
+  @include tablet {
+    padding-right: 25px;
+  }
 }
 &-bio__container {
     display: flex;
@@ -98,11 +113,22 @@ font-weight: 600;
 &-text-container__info--a {
   padding-bottom: 20px;
   font-weight: 600;
-} 
+}
+&-text-container__info--aa {
+  @include tablet {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+  
+}
 &-text-container__info--b {
 line-height: 1.5;
 font-size: 13px;
 padding-bottom: 15px;
+@include tablet {
+  font-size: 14px;
+}
 }
 &-text-container__info--bb {
 font-weight: 600;
@@ -135,6 +161,10 @@ flex-direction: column;
   padding-left: 0%;
   font-weight: 600;
   font-size: 25px;
+  @include tablet {
+    padding-left: 25px;
+    font-size: 30px;
+  }
  }
 }
 
@@ -162,6 +192,10 @@ flex-direction: column;
       padding-bottom: 20px;
       font-weight: 600;
       font-size: 20px;
+      @include tablet {
+        padding-right: 25px;
+        font-size: 30px;
+      }
     }
     &__title-a {
         padding-right: 20px;
@@ -180,9 +214,15 @@ flex-direction: column;
     &__contact--mod {
     padding-bottom: 20px;
     font-size: 14px;
+    @include tablet {
+      padding-right: 40px;
+    }
   }
   &__contact--mod2 {
     padding-bottom: 25px;
+    @include tablet {
+      padding-right: 40px;
+    }
   }
   &__contact--mod3 {
     padding-bottom: 60px;
