@@ -85,6 +85,12 @@ li {
   width: 100%;
   height: auto;
 }
+@media (min-width: 768px) {
+  .main-bio__image {
+    width: 90%;
+    margin-left: 35px;
+  }
+}
 .main-image__gallery--item {
   width: 100%;
   height: auto;
@@ -139,6 +145,11 @@ li {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 768px) {
+  .main-text-container-b {
+    display: flex;
+  }
+}
 .main-text-container__info--b {
   line-height: 1.5;
   font-size: 13px;
@@ -152,6 +163,11 @@ li {
 .main-text-container__info--bb {
   font-weight: 600;
   padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .main-text-container__info--bbb {
+    line-height: 2;
+  }
 }
 .main-container {
   display: flex;
