@@ -85,7 +85,7 @@ li:hover a {
   padding-bottom: 148px;
   position: relative;
   color: #FFFFFF;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 35px;
 }
 @media (min-width: 768px) {
@@ -120,6 +120,7 @@ li:hover a {
     width: 1000px;
     height: 600px;
     padding-left: 90px;
+    margin-left: 100px;
   }
 }
 .main-bio__container {
@@ -140,7 +141,7 @@ li:hover a {
 }
 .main__title--mod {
   font-weight: 600;
-  font-size: 23px;
+  font-size: 30px;
 }
 @media (min-width: 768px) {
   .main__title--mod {
@@ -155,7 +156,7 @@ li:hover a {
 }
 @media (min-width: 1280px) {
   .main-text-container__info {
-    padding-left: 120px;
+    padding-left: 180px;
   }
 }
 .main-text-container__info--a {
@@ -164,7 +165,7 @@ li:hover a {
 }
 @media (min-width: 1280px) {
   .main-text-container__info--a {
-    padding-left: 120px;
+    padding-left: 180px;
   }
 }
 @media (min-width: 768px) {
@@ -247,7 +248,7 @@ li:hover a {
 }
 @media (min-width: 1280px) {
   .gallery-images {
-    padding-left: 70px;
+    padding-left: 150px;
   }
 }
 .gallery-image__item {
@@ -276,7 +277,7 @@ li:hover a {
 }
 @media (min-width: 1280px) {
   .gallery-image__item--mod1 {
-    padding-left: 70px;
+    padding-left: 150px;
   }
 }
 @media (min-width: 768px) {
@@ -372,7 +373,7 @@ li:hover a {
 }
 @media (min-width: 1280px) {
   .contact-info__logo {
-    padding-left: 650px;
+    padding-left: 770px;
   }
 }
 
