@@ -53,6 +53,9 @@ li:hover a {
     background-position: center;
     margin-bottom: 0px;
     min-height: auto;
+    @include tablet {
+      height: 500px;
+    }
 }
 &-hero__image--text {
     padding-top: 148px;
@@ -61,9 +64,12 @@ li:hover a {
     position: relative;
     color: #FFFFFF;
     font-weight: 700;
+    font-size: 35px;
     @include tablet {
       font-size: 60px;
       font-weight: 600;
+      padding-top: 200px;
+      padding-left: 60px;
     }
 }
 &-image__gallery {
@@ -99,10 +105,17 @@ padding-right: 20px;
     padding: 1px;
     padding-top: 15px;
     padding-bottom: 10px;
+    @include tablet {
+      padding-top: 15px;
+      padding-bottom: 30px;
+    }
 }
 &__title--mod {
   font-weight: 600;
   font-size: 23px;
+  @include tablet {
+    font-size: 30px;
+  }
 }
 &-text-container__info {
 padding-top: 10px;
@@ -252,6 +265,9 @@ flex-direction: column;
         padding-right: 25px;
         font-size: 30px;
       }
+      @include desktop {
+        margin-left: 50px;
+      }
     }
     &__title-a {
         padding-right: 20px;
@@ -286,6 +302,21 @@ flex-direction: column;
   &__contact--mod4 {
     font-weight: 600;
   }
+  &__contact {
+    @include desktop {
+      padding-right: 25px;
+      margin-left: 50px;
+    }
+  }
+  &__logo {
+    @include tablet {
+      padding-left: 275px;
+    }
+    @include desktop {
+      padding-left: 650px;
+    }
+    
+  }
 }
 
 
@@ -304,6 +335,12 @@ flex-direction: column;
     &--mod {
       font-size: 12px;
       padding-bottom: 15px;
+      @include desktop {
+        padding-left: 50px;
+      }
+    }
+    @include desktop {
+      font-size: 14px;
     }
 }
 

@@ -74,6 +74,11 @@ li:hover a {
   margin-bottom: 0px;
   min-height: auto;
 }
+@media (min-width: 768px) {
+  .main-hero__image {
+    height: 500px;
+  }
+}
 .main-hero__image--text {
   padding-top: 148px;
   padding-left: 16px;
@@ -81,11 +86,14 @@ li:hover a {
   position: relative;
   color: #FFFFFF;
   font-weight: 700;
+  font-size: 35px;
 }
 @media (min-width: 768px) {
   .main-hero__image--text {
     font-size: 60px;
     font-weight: 600;
+    padding-top: 200px;
+    padding-left: 60px;
   }
 }
 .main-image__gallery {
@@ -124,9 +132,20 @@ li:hover a {
   padding-top: 15px;
   padding-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .main__title {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+}
 .main__title--mod {
   font-weight: 600;
   font-size: 23px;
+}
+@media (min-width: 768px) {
+  .main__title--mod {
+    font-size: 30px;
+  }
 }
 .main-text-container__info {
   padding-top: 10px;
@@ -300,6 +319,11 @@ li:hover a {
     font-size: 30px;
   }
 }
+@media (min-width: 1280px) {
+  .contact-info__title {
+    margin-left: 50px;
+  }
+}
 .contact-info__title-a {
   padding-right: 20px;
 }
@@ -335,6 +359,22 @@ li:hover a {
 .contact-info__contact--mod4 {
   font-weight: 600;
 }
+@media (min-width: 1280px) {
+  .contact-info__contact {
+    padding-right: 25px;
+    margin-left: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-info__logo {
+    padding-left: 275px;
+  }
+}
+@media (min-width: 1280px) {
+  .contact-info__logo {
+    padding-left: 650px;
+  }
+}
 
 .additional-info {
   background-color: #323232;
@@ -354,4 +394,14 @@ li:hover a {
 .additional-info--mod {
   font-size: 12px;
   padding-bottom: 15px;
+}
+@media (min-width: 1280px) {
+  .additional-info--mod {
+    padding-left: 50px;
+  }
+}
+@media (min-width: 1280px) {
+  .additional-info {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=bio.css.map */
