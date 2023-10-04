@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(/assets/fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(/assets/fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(/assets/fonts/AvenirNextLTPro-Demi.otf);
+  font-weight: 600;
+}
+* {
+  margin: 0;
+}
+
+a {
+  font: inherit;
+}
+
+.navbar {
+  background-color: #323232;
+  color: #FFFFFF;
+}
+.navbar-logo__container {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .navbar-logo__container {
+    justify-content: left;
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+}
+.navbar-pages {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0%;
+}
+
+.contact-info {
+  background-color: #323232;
+  color: #FFFFFF;
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.contact-info__container {
+  display: flex;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .contact-info__container {
+    margin-right: 20px;
+    padding-top: 25px;
+  }
+}
+.contact-info__title {
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .contact-info__title {
+    padding-right: 25px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .contact-info__title {
+    margin-left: 50px;
+  }
+}
+.contact-info__title-a {
+  padding-right: 20px;
+}
+.contact-info__title-c {
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .contact-info__contacts {
+    display: flex;
+    width: 100%;
+  }
+}
+.contact-info__contact--mod {
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .contact-info__contact--mod {
+    padding-right: 40px;
+  }
+}
+.contact-info__contact--mod2 {
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .contact-info__contact--mod2 {
+    padding-right: 40px;
+  }
+}
+.contact-info__contact--mod3 {
+  padding-bottom: 60px;
+}
+.contact-info__contact--mod4 {
+  font-weight: 600;
+}
+@media (min-width: 1280px) {
+  .contact-info__contact {
+    padding-right: 25px;
+    margin-left: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-info__logo {
+    padding-left: 275px;
+  }
+}
+@media (min-width: 1280px) {
+  .contact-info__logo {
+    padding-left: 770px;
+  }
+}/*# sourceMappingURL=shows.css.map */
