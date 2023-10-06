@@ -277,7 +277,7 @@ li:hover a {
 }
 @media (min-width: 1280px) {
   .gallery-image__item--mod1 {
-    padding-left: 150px;
+    padding-left: 120px;
   }
 }
 @media (min-width: 768px) {
@@ -289,6 +289,16 @@ li:hover a {
 .comment__section--container {
   display: flex;
 }
+@media (min-width: 768px) {
+  .comment__section--container {
+    padding-left: 50px;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__section--container {
+    padding-left: 250px;
+  }
+}
 
 .comment__section--input1 {
   padding-bottom: 20px;
@@ -297,6 +307,11 @@ li:hover a {
 .comment__section--text {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .comment__section--text {
+    padding-left: 20px;
+  }
 }
 
 .comment__section--text1 {
@@ -311,20 +326,39 @@ li:hover a {
 }
 
 button {
-  text-align: center;
+  height: 45px;
   margin-top: 15px;
   margin-bottom: 15px;
-  padding-right: 135px;
+  padding-right: 125px;
+}
+@media (min-width: 768px) {
+  button {
+    height: 40px;
+    margin-left: 410px;
+    padding-right: 70px;
+  }
 }
 
 #name {
-  padding-bottom: 20px;
-  padding-right: 70px;
+  width: 195px;
+  height: 35px;
+}
+@media (min-width: 768px) {
+  #name {
+    width: 550px;
+    height: 45px;
+  }
 }
 
 #comment {
-  padding-bottom: 75px;
-  padding-right: 70px;
+  width: 195px;
+  height: 75px;
+}
+@media (min-width: 768px) {
+  #comment {
+    width: 550px;
+    height: 85px;
+  }
 }
 
 .contact-info {

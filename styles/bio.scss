@@ -228,7 +228,7 @@ flex-direction: column;
     padding-right: 25px;
   }
   @include desktop {
-    padding-left: 150px;
+    padding-left: 120px;
   }
 }
 &-image__item--mod2 {
@@ -239,6 +239,12 @@ flex-direction: column;
 }
 .comment__section--container {
   display: flex;
+  @include tablet {
+    padding-left: 50px
+  }
+  @include desktop {
+    padding-left: 250px;
+  }
 }
 .comment__section--input1 {
   padding-bottom: 20px;
@@ -246,6 +252,9 @@ flex-direction: column;
 .comment__section--text {
   padding-top: 15px;
   padding-bottom: 15px;
+  @include tablet {
+    padding-left: 20px;
+  }
 }
 .comment__section--text1 {
   padding-bottom: 5px;
@@ -257,18 +266,31 @@ flex-direction: column;
   border-radius: 50%;
 }
 button {
-  text-align: center;
+  height: 45px;
   margin-top: 15px;
   margin-bottom: 15px;
-  padding-right: 135px;
+  padding-right: 125px;
+  @include tablet {
+    height: 40px;
+    margin-left: 410px;
+    padding-right: 70px;
+  }
 }
 #name {
-  padding-bottom: 20px;
-  padding-right: 70px;
+  width: 195px;
+  height: 35px;
+  @include tablet {
+    width: 550px;
+    height: 45px;
+  }
 }
 #comment {
-  padding-bottom: 75px;
-  padding-right: 70px;
+  width: 195px;
+  height: 75px;
+  @include tablet {
+    width: 550px;
+    height: 85px;
+  }
 }
 .contact-info {
     background-color: #323232;
