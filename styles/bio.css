@@ -295,6 +295,11 @@ li:hover a {
 }
 
 .comment__section--text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.comment__section--text1 {
   padding-bottom: 5px;
 }
 
