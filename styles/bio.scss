@@ -258,6 +258,7 @@ flex-direction: column;
 }
 .comment__section--text1 {
   padding-bottom: 5px;
+  color: #E1E1E1;
 }
 .comment__section--image {
   width: 50px;
@@ -279,6 +280,7 @@ button {
 #name {
   width: 195px;
   height: 35px;
+  
   @include tablet {
     width: 550px;
     height: 45px;
