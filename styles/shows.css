@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
   src: url(/assets/fonts/AvenirNextLTPro-Regular.otf);
 }
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
   src: url(/assets/fonts/AvenirNextLTPro-Bold.otf);
   font-weight: 700;
 }
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
   src: url(/assets/fonts/AvenirNextLTPro-Demi.otf);
   font-weight: 600;
 }
@@ -41,6 +41,10 @@ a {
   padding-left: 0%;
 }
 
+li {
+  list-style-type: none;
+}
+
 .shows {
   min-width: 320px;
 }
@@ -52,6 +56,19 @@ a {
   background-position: center;
   margin-bottom: 0px;
   min-height: 300px;
+}
+.shows-header__image--text {
+  padding-top: 148px;
+  padding-left: 16px;
+  padding-bottom: 148px;
+  position: relative;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 35px;
+}
+.shows-header__image--subText {
+  color: #FFFFFF;
+  font-size: 14px;
 }
 
 .contact-info {

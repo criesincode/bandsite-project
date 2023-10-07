@@ -25,6 +25,9 @@ a {
     padding-left: 0%; 
  }   
 }
+li {
+  list-style-type: none;
+}
 .shows {
   min-width: 320px;
   &-header__image {
@@ -36,6 +39,20 @@ a {
       margin-bottom: 0px;
       min-height: 300px;
 }
+&-header__image--text {
+  padding-top: 148px;
+    padding-left: 16px;
+    padding-bottom: 148px;
+    position: relative;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 35px;
+}
+&-header__image--subText {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
 }
 .contact-info {
     background-color: #323232;
