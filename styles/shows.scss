@@ -6,25 +6,27 @@
     }
 a {
     font: inherit;
+    color: #FFFFFF;
+    text-decoration: none;
     }
 .navbar {
     background-color: #323232;
     color: #FFFFFF;
-    &-logo__container {
-    display: flex;
-    justify-content: center;
-    @include tablet {
-    justify-content: left;
-    padding-left: 25px;
-    padding-top: 20px;
+    // &-logo__container {
+    // display: flex;
+    // justify-content: center;
+    // @include tablet {
+    // justify-content: left;
+    // padding-left: 25px;
+    // padding-top: 20px;
      }
- }
+ 
     &-pages {
     display: flex;
     justify-content: space-evenly;
     padding-left: 0%; 
  }   
-}
+
 li {
   list-style-type: none;
 }
