@@ -1,5 +1,5 @@
-@use "./partials/mixins" as *;
-@use "./partials/fonts" as *;
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/fonts" as *;
 
 * {
     margin: 0;
@@ -12,16 +12,16 @@ a {
 .navbar {
     background-color: #323232;
     color: #FFFFFF;
-    // &-logo__container {
-    // display: flex;
-    // justify-content: center;
-    // @include tablet {
-    // justify-content: left;
-    // padding-left: 25px;
-    // padding-top: 20px;
+    &-logo__container {
+    display: flex;
+    justify-content: center;
+    @include tablet {
+    justify-content: left;
+    padding-left: 25px;
+    padding-top: 20px;
      }
- 
-    &-pages {
+     } }
+    .navbar-pages {
     display: flex;
     justify-content: space-evenly;
     padding-left: 0%; 
@@ -39,20 +39,21 @@ li {
       background-repeat: no-repeat;
       background-position: center;
       margin-bottom: 0px;
-      min-height: 300px;
+      height: 300px;
 }
 &-header__image--text {
-  padding-top: 148px;
+  // padding-top: 148px;
     padding-left: 16px;
-    padding-bottom: 148px;
+    // padding-bottom: 148px;
     position: relative;
     color: #FFFFFF;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 24px;
 }
 &-header__image--subText {
   color: #FFFFFF;
   font-size: 14px;
+  padding-top: 40px;
 }
 
 }

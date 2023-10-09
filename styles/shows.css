@@ -18,6 +18,8 @@
 
 a {
   font: inherit;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .navbar {
@@ -35,6 +37,7 @@ a {
     padding-top: 20px;
   }
 }
+
 .navbar-pages {
   display: flex;
   justify-content: space-evenly;
@@ -55,20 +58,19 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 0px;
-  min-height: 300px;
+  height: 300px;
 }
 .shows-header__image--text {
-  padding-top: 148px;
   padding-left: 16px;
-  padding-bottom: 148px;
   position: relative;
   color: #FFFFFF;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 24px;
 }
 .shows-header__image--subText {
   color: #FFFFFF;
   font-size: 14px;
+  padding-top: 40px;
 }
 
 .contact-info {
