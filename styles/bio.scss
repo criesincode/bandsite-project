@@ -40,7 +40,7 @@ a {
   text-decoration: none;
 }
 li:hover a {
-  background-color:darkgray;
+  text-decoration: underline;
   border-radius: 5px;
   }
 .main {
@@ -286,6 +286,10 @@ button {
     height: 40px;
     margin-left: 410px;
     padding-right: 70px;
+  }
+  @include desktop {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 button:hover {

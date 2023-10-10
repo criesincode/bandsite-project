@@ -58,7 +58,7 @@ a {
 }
 
 li:hover a {
-  background-color: darkgray;
+  text-decoration: underline;
   border-radius: 5px;
 }
 
@@ -347,6 +347,12 @@ button {
     height: 40px;
     margin-left: 410px;
     padding-right: 70px;
+  }
+}
+@media (min-width: 1280px) {
+  button {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
