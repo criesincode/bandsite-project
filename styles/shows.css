@@ -58,7 +58,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 0px;
-  height: 300px;
+  height: 320px;
 }
 .shows-header__image--text {
   padding-left: 16px;
@@ -67,10 +67,33 @@ li {
   font-weight: 600;
   font-size: 24px;
 }
+.shows-list__headerText {
+  font-size: 24px;
+  font-weight: 700;
+}
 .shows-header__image--subText {
   color: #FFFFFF;
   font-size: 14px;
   padding-top: 40px;
+  padding-left: 16px;
+}
+.shows-list__section {
+  margin-bottom: 30px;
+}
+.shows-lists__label {
+  padding-bottom: 10px;
+  color: #AFAFAF;
+  font-size: 13px;
+}
+.shows-lists__button {
+  background-color: #323232;
+  color: #FFFFFF;
+}
+.shows button:hover {
+  background-color: #000000;
+}
+.shows-lists__date {
+  font-weight: 700;
 }
 
 .contact-info {
