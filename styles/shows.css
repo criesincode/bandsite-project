@@ -67,9 +67,21 @@ li {
   font-weight: 600;
   font-size: 24px;
 }
+@media (min-width: 768px) {
+  .shows-header__image--text {
+    font-size: 60px;
+    width: 550px;
+  }
+}
+.shows-list {
+  margin-left: 15px;
+}
 .shows-list__headerText {
   font-size: 24px;
   font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
 }
 .shows-header__image--subText {
   color: #FFFFFF;
@@ -77,23 +89,40 @@ li {
   padding-top: 40px;
   padding-left: 16px;
 }
+@media (min-width: 768px) {
+  .shows-header__image--subText {
+    font-size: 24px;
+  }
+}
 .shows-list__section {
   margin-bottom: 30px;
 }
 .shows-lists__label {
-  padding-bottom: 10px;
+  margin-bottom: 5px;
   color: #AFAFAF;
   font-size: 13px;
+}
+.shows-lists__location {
+  margin-bottom: 20px;
+}
+.shows-lists__date {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.shows-lists__venue {
+  margin-bottom: 10px;
 }
 .shows-lists__button {
   background-color: #323232;
   color: #FFFFFF;
+  width: 280px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
 }
 .shows button:hover {
   background-color: #000000;
-}
-.shows-lists__date {
-  font-weight: 700;
 }
 
 .contact-info {
@@ -176,13 +205,52 @@ li {
     margin-left: 50px;
   }
 }
+.contact-info__logo {
+  display: none;
+}
 @media (min-width: 768px) {
   .contact-info__logo {
-    padding-left: 275px;
+    display: flex;
+    padding-left: 250px;
   }
 }
 @media (min-width: 1280px) {
   .contact-info__logo {
-    padding-left: 770px;
+    padding-left: 675px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-info__logo2 {
+    display: none;
+  }
+}
+
+.additional-info {
+  background-color: #323232;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .additional-info {
+    padding-bottom: 20px;
+  }
+}
+.additional-info__image {
+  padding-bottom: 15px;
+}
+.additional-info--mod {
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+@media (min-width: 1280px) {
+  .additional-info--mod {
+    padding-left: 50px;
+  }
+}
+@media (min-width: 1280px) {
+  .additional-info {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=shows.css.map */

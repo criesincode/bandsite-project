@@ -99,7 +99,7 @@ const displayShow = (showsListing) => {
     venue.textContent = showsListing.venue;
     locationLabel.textContent = "LOCATION";
     location.textContent = showsListing.location;
-    button.textContent = "Buy Tickets";
+    button.textContent = "BUY TICKETS";
 
     info.appendChild(dateLabel);
     info.appendChild(date);
