@@ -57,24 +57,22 @@ const displayComments = () => {
     }
 }
 
-displayComments()
+displayComments();
 
-//  // Function to add a new comment
-//  function commentForm(event) {
-//      event.preventDefault(); // Prevent form submission
+const form = document.getElementById("commentForm");
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-//      // Get the new comment from the form
-//      const newComment = document.getElementById("comment").value;
+    const nameInput = document.getElementById("name");
+    const commentInput = document.getElementById("comment");
+    const timeStamp = new Date();
+    generatedComments.unshift({
+        name: nameInput.value,
+        timestamp: timeStamp.toLocaleDateString(),
+        comment: commentInput.value,
+    });
 
-//      // Add the new comment to the list of comments
-//      generatedComments.push(newComment);
-
-//      // Display the updated list of comments
-//      displayComments(generatedComments);
-
-//      // Clear the comment input field
-//      document.getElementById("comment").value = "";
-//  }
-
-//  // Display initial comments
-//  displayComments(generatedComments);
+    const commentSection = document.getElementById("comments");
+    commentSection.replaceChildren();
+    displayComments();
+})
