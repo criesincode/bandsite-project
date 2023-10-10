@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bees Knees - Shows</title>
-    <link rel="stylesheet" href="./styles/shows.css">
+    <link rel="stylesheet" href="../styles/shows.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar-logo__container"><a href="./index.html"><img class="navbar-logo" src="./assets/logo/Logo-bandsite.svg"></a></div>
+        <div class="navbar-logo__container"><a href="./index.html"><img class="navbar-logo" src="../assets/logo/Logo-bandsite.svg"></a></div>
         <div class="navbar-pages__cotainer">
             <ul class="navbar-pages">
                 <li><a href="./index.html">Biography</a></li>
@@ -22,24 +22,26 @@
             <p class="shows-header__image--subText">Beautiful Beasts Album</p>
             <p class="shows-header__image--text">Queen of Yellow x For The Strings</p>
         </div>
-    <div class="shows__container">
-        <p class="shows__header">Shows</p>
-        <div class="shows__container--item"></div>
-        <div class="shows__container--item"></div>
-        <div class="shows__container--item"></div>
-        <div class="shows__container--item"></div>
-        <div class="shows__container--item"></div>
-        <div class="shows__container--item"></div>
+    <div class="shows-list">
+        <p class="shows-list__headerText">Shows</p>
+        <div class="shows-list__section">
+            <div class="shows-list__details"></div>
+            <div class="shows-list__info">
+                <p class="shows-lists__date">date</p>
+                <p class="shows-lists__venue">venue</p>
+                <p class="shows-lists__location">location</p>
+            </div>
+            <button>Buy Tickets</button>
+        </div>
     </div>
-        
     </section>
     <section class="contact-info">
         <p class="contact-info__title">Get in Touch</p> 
         <div class="contact-info__container">
-            <div class="contact-info__title-a"> <a href="https://www.instagram.com/"> <img src="./assets/icons/svg/Icon-instagram.svg"></a></div>
-            <div class="contact-info__title-b"> <a href="https://www.facebook.com/"> <img src="./assets/icons/svg/Icon-facebook.svg"></a></div>
-            <div class="contact-info__title-c"> <a href="https://twitter.com/"> <img src="./assets/icons/svg/Icon-twitter.svg"></a></div>
-            <div class="contact-info__logo"><img src="./assets/logo/Logo-bandsite.svg"></div>
+            <div class="contact-info__title-a"> <a href="https://www.instagram.com/"> <img src="../assets/icons/svg/Icon-instagram.svg"></a></div>
+            <div class="contact-info__title-b"> <a href="https://www.facebook.com/"> <img src="../assets/icons/svg/Icon-facebook.svg"></a></div>
+            <div class="contact-info__title-c"> <a href="https://twitter.com/"> <img src="../assets/icons/svg/Icon-twitter.svg"></a></div>
+            <div class="contact-info__logo"><img src="../assets/logo/Logo-bandsite.svg"></div>
         </div>
         <div class="contact-info__contacts">
             <div class="contact-info__contact">
@@ -69,6 +71,7 @@
         <div class="additional-info__container">
         <p class="additional-info--mod">Copyright The Bees Knees © 2021 All Rights Reserved</p>
         </div>
-    </footer>   
+    </footer>
+    <script rel="stylesheet" src="../scripts/build-shows-page.js"></script>   
 </body>
 </html>
