@@ -1,5 +1,6 @@
 @use "./partials/mixins" as *;
 @use "./partials/fonts" as *;
+
 * {
 margin: 0;
 }
@@ -9,8 +10,6 @@ a {
 body {
     margin: 0%;
     font-family: "Avenir";
-    padding-right: 16px;
-    padding-left: 16px;
 }
 .navbar {
     background-color: #323232;
@@ -329,6 +328,10 @@ button:hover {
   @include desktop {
     width: 575px;
   }
+}
+.comments__info {
+  border-bottom: #AFAFAF 1px solid;
+  margin-bottom: 30px;
 }
 .contact-info {
     background-color: #323232;

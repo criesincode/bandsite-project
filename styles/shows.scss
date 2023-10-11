@@ -3,6 +3,7 @@
 
 * {
     margin: 0;
+    font-family: Avenir ;
     }
 a {
     font: inherit;
@@ -15,6 +16,7 @@ a {
     &-logo__container {
     display: flex;
     justify-content: center;
+    width: 100%;
     @include tablet {
     justify-content: left;
     padding-left: 25px;
@@ -25,7 +27,13 @@ a {
     display: flex;
     justify-content: space-evenly;
     padding-left: 0%; 
- }   
+ }
+ .navbar-logo {
+  @include tablet{
+    position: absolute;
+  }
+  
+ }
 
 li {
   list-style-type: none;
@@ -40,6 +48,9 @@ li {
       background-position: center;
       margin-bottom: 0px;
       height: 320px;
+      @include tablet {
+        height: 450px;
+      }
 }
 &-header__image--text {
   // padding-top: 148px;
@@ -73,23 +84,49 @@ li {
     font-size: 24px;
   }
 }
+&-header__audio {
+  @include tablet {
+    width: 400px;
+    margin-left: 15px;
+  }
+}
+&-list__info {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 &-list__section {
   margin-bottom: 30px;
+  border-bottom: #E1E1E1 1px solid;
 }
 &-lists__label {
   margin-bottom: 5px;
   color: #AFAFAF;
   font-size: 13px;
+  @include tablet {
+    display: none;
+  }
 }
 &-lists__location {
   margin-bottom: 20px;
+  @include tablet {
+    margin-right: 10px;
+  }
 }
 &-lists__date {
   font-weight: 700;
   margin-bottom: 10px;
+  @include tablet {
+    margin-right: 10px;
+  }
 }
 &-lists__venue {
   margin-bottom: 10px;
+  @include tablet {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
 }
 &-lists__button {
   background-color: #323232;
@@ -99,6 +136,11 @@ li {
   border-radius: 4px;
   font-size: 10px;
   font-weight: 700;
+  @include tablet {
+    margin-left: 20px;
+    width: 125px;
+    height: 40px;
+  }
 }
 button:hover {
   background-color: #000000;

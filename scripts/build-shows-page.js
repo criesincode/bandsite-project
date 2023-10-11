@@ -1,18 +1,4 @@
-/* 
-<div class="shows-list">
-  <p class="shows-list__headerText">Shows</p>
-  <div class="shows-list__section">
-      <div class="shows-list__details"></div>
-      <div class="shows-list__info">
 
-        <p class="shows-lists__date">date</p>
-        <p class="shows-lists__venue">venue</p>
-        <p class="shows-lists__location">location</p>
-      </div>
-      <button class="shows-lists__button">Buy Tickets</button>
-   </div>
-</div>
-*/
 
 const generatedShows = [
     {
@@ -109,7 +95,7 @@ const displayShow = (showsListing) => {
     info.appendChild(location);
     section.appendChild(details);
     section.appendChild(info);
-    section.appendChild(button);
+    info.appendChild(button);
     showList.appendChild(section);
 }
 

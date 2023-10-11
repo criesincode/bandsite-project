@@ -23,8 +23,6 @@ a {
 body {
   margin: 0%;
   font-family: "Avenir";
-  padding-right: 16px;
-  padding-left: 16px;
 }
 
 .navbar {
@@ -403,6 +401,11 @@ button:hover {
   #comments {
     width: 575px;
   }
+}
+
+.comments__info {
+  border-bottom: #AFAFAF 1px solid;
+  margin-bottom: 30px;
 }
 
 .contact-info {
