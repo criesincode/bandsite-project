@@ -6,7 +6,13 @@ margin: 0;
 }
 a {
   font: inherit;
+  color: #FFFFFF;
+  text-decoration: none;
 }
+li:hover a {
+  text-decoration: underline;
+  border-radius: 5px;
+  }
 body {
     margin: 0%;
     font-family: "Avenir";
@@ -17,6 +23,7 @@ body {
     &-logo__container {
         display: flex;
         justify-content: center;
+        padding-bottom: 15px;
         @include tablet {
           justify-content: left;
           padding-left: 25px;
@@ -34,14 +41,7 @@ body {
 li {
     list-style-type: none;
 }
-a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-li:hover a {
-  text-decoration: underline;
-  border-radius: 5px;
-  }
+
 .main {
   min-width: 320px;
 &-hero__image {

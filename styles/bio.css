@@ -18,6 +18,13 @@
 
 a {
   font: inherit;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+li:hover a {
+  text-decoration: underline;
+  border-radius: 5px;
 }
 
 body {
@@ -32,6 +39,7 @@ body {
 .navbar-logo__container {
   display: flex;
   justify-content: center;
+  padding-bottom: 15px;
 }
 @media (min-width: 768px) {
   .navbar-logo__container {
@@ -48,16 +56,6 @@ body {
 
 li {
   list-style-type: none;
-}
-
-a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-li:hover a {
-  text-decoration: underline;
-  border-radius: 5px;
 }
 
 .main {
