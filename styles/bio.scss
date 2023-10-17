@@ -23,7 +23,7 @@ body {
     &-logo__container {
         display: flex;
         justify-content: center;
-        padding-bottom: 15px;
+        width: 100%;
         @include tablet {
           justify-content: left;
           padding-left: 25px;
@@ -37,6 +37,11 @@ body {
         
     }   
 }
+.navbar-logo {
+  @include tablet{
+    position: absolute;
+  }
+} 
 
 li {
     list-style-type: none;

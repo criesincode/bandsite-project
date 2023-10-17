@@ -38,6 +38,9 @@ a {
 li {
   list-style-type: none;
 }
+li:hover {
+  text-decoration: underline;
+}
 .shows {
   min-width: 320px;
   &-header__image {
@@ -48,14 +51,17 @@ li {
       background-position: center;
       margin-bottom: 0px;
       height: 320px;
+      
       @include tablet {
         height: 450px;
       }
+      @include desktop {
+        display: flex;
+        height: 37.5rem;
+      }
 }
 &-header__image--text {
-  // padding-top: 148px;
     padding-left: 16px;
-    // padding-bottom: 148px;
     position: relative;
     color: #FFFFFF;
     font-weight: 600;
@@ -67,6 +73,17 @@ li {
 }
 &-list {
   margin-left: 15px;
+}
+&-header__text-container {
+  width: 15.625rem;
+  @include tablet {
+    padding-left: .9375rem;
+    width: 18.75rem;
+  }
+  @include desktop {
+  padding-top: 6.25rem;
+  padding-left: 5.625rem;
+  }
 }
 &-list__headerText {
   font-size: 24px;
@@ -88,9 +105,26 @@ li {
   @include tablet {
     width: 400px;
     margin-left: 15px;
+    @include desktop {
+      padding-left: 37.5rem;
+      padding-top: 11.25rem;
+      height: 18.75rem;
+      width: 31.25rem
+    }
+  }
+}
+iframe {
+  width: 17.1875rem;
+  height: 7.8125rem;
+  @include tablet {
+    width: 435px;
+  }
+  @include desktop {
+    height: 9.375rem;
   }
 }
 &-list__info {
+  padding-left: .9375rem;
   @include tablet {
     display: flex;
     justify-content: space-around;

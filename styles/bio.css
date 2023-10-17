@@ -39,7 +39,7 @@ body {
 .navbar-logo__container {
   display: flex;
   justify-content: center;
-  padding-bottom: 15px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .navbar-logo__container {
@@ -52,6 +52,12 @@ body {
   display: flex;
   justify-content: space-evenly;
   padding-left: 0%;
+}
+
+@media (min-width: 768px) {
+  .navbar-logo {
+    position: absolute;
+  }
 }
 
 li {

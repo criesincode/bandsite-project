@@ -1,59 +1,19 @@
+import { BandSiteAPI } from "./band-site-api.js";
 
+const apiKeyFromBandSiteAPI = "f136dc84-db9d-4b97-8f6b-753330864b0d";
+const bandSiteAPI = new BandSiteAPI(apiKeyFromBandSiteAPI);
 
-const generatedShows = [
-    {
-      date: "Mon Sept 06 2021",
-      venue: "Ronald Lane",
-      location: "San Francisco, CA",   
-    },
+async function generatedShows() {
+    let showData = await bandSiteAPI.getShows();
+        for (let i=0; i<showData.length; i++) {
+            displayShows(showData[i]);
+        }
+    }   
 
-    {
-        date: "Tue Sept 21 2021",
-        venue: "Pier 3 East",
-        location: "San Francisco, CA",
-    },
+generatedShows()
 
-    {
-        date: "Fri Oct 15 2021",
-        venue: "View Lounge",
-        location: "San Francisco, CA",
-    },
-
-    {
-        date: "Sat Nov 06 2021",
-        venue: "Hyatt Agency",
-        location: "San Francisco, CA",
-    },
-
-    {
-        date: "Fri Nov 26 2021",
-        venue: "Moscow Center",
-        location: "San Francisco, CA",
-    },
-
-    {
-        date: "Wed Dec 15 2021",
-        venue: "Press Club",
-        location: "San Francisco, CA",
-    }
-
-]
-const displayTitle = () => {
-    const shows = document.querySelector(".shows");
-    const heading = document.createElement("p");
-    const showList = document.createElement("div");
-
-    heading.classList.add("shows-list__headerText");
-    showList.classList.add("shows-list");
-
-    heading.textContent = "Shows";
-
-    shows.appendChild(heading);
-    shows.appendChild(showList);
-}
-
-const displayShow = (showsListing) => {
-    const showList = document.querySelector(".shows-list");
+const showsContainer = document.querySelector(".showsContainer")
+const displayShows = (showDates) => {
     const section = document.createElement("div");
     const details = document.createElement("div");
     const info = document.createElement("div");
@@ -80,11 +40,11 @@ const displayShow = (showsListing) => {
     button.classList.add("shows-lists__button");
 
     dateLabel.textContent = "DATE";
-    date.textContent = showsListing.date;
+    date.textContent = showDates.date;
     venueLabel.textContent = "VENUE";
-    venue.textContent = showsListing.venue;
+    venue.textContent = showDates.place;
     locationLabel.textContent = "LOCATION";
-    location.textContent = showsListing.location;
+    location.textContent = showDates.location;
     button.textContent = "BUY TICKETS";
 
     info.appendChild(dateLabel);
@@ -96,14 +56,8 @@ const displayShow = (showsListing) => {
     section.appendChild(details);
     section.appendChild(info);
     info.appendChild(button);
-    showList.appendChild(section);
+    showsContainer.appendChild(section);
+
 }
 
-const displayShows = () => {
 
-    for (let i=0; i<generatedShows.length; i++) {
-        displayShow(generatedShows[i]);
-    }
-}
-displayTitle()
-displayShows()
